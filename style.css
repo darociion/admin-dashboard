@@ -11,7 +11,11 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;  
 }
 
 a {
@@ -33,8 +37,8 @@ hr {
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 0.6fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-column: 2/5;
+    grid-template-rows: 0.5fr 0.9fr;
+    grid-column: 2/3;
     grid-row: 1/2;
     justify-items: center;
     box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
@@ -66,7 +70,7 @@ input {
 
 input:focus {
     outline: none;
-    border: #059669 2px solid;
+    border: #059669 1px solid;
     box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
 }
 
@@ -76,20 +80,19 @@ input:focus {
 }
 
 .bell {
-    margin: 2rem 0 0 17rem;
-    width: 6% !important;
+    margin: 2.3rem 0 0 -8rem;
+    width: 15% !important;
     cursor: pointer;
+    float: right;
 }
 
 .user {
     grid-column: 2/3;
     grid-row: 1/2;
-    position: relative;
-    right: -20rem;
 }
 
 .profile {
-    margin: 0.6rem 0px -0.6rem 0.3rem;
+    float: right;
 }
 
 .avatar {
@@ -97,18 +100,33 @@ input:focus {
     width: 15%;
 }
 
-.name {
-    margin: 0.1rem 0 0 -0.5rem;
+.userAvatar {
+    float: right;
+    margin: 1rem 2.8rem 0 0;
+}
+
+.userName {
+    float: right;
+    margin-right: 2rem;
 }
 
 .greetings {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-top: -1rem;
+    margin: -1rem -11rem 0 0;
+}
+
+.adminAvatar {
+    float: left;
+    width: 20%;
+}
+
+.admin {
+    margin: 1.5rem 0 0 7rem;
 }
 
 .buttons {
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
     grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -167,15 +185,94 @@ button {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    grid-column: 2/5;
+    grid-template-columns: 1fr 0.4fr;
+}
+
+.content-title {
+    position: absolute;
+    top: 36%;
+    left: 20%;
 }
 
 .cards {
-    background-color: yellow;
+    display: grid;
     grid-column: 1/2;
+    grid-row: 1/3;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    gap: 2rem;
+    padding: 4rem;
 }
 
-.announcement {
-    background-color: green;
+.card {
+    border-left: 5px solid rgb(5, 150, 105);
+    border-radius: 1.8rem;
+    padding: 2rem 1.5rem 2rem 2rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 5px 8px 0px;
+    height: 200px;
+}
+
+.share {
+    position: relative;
+    left: 80%;
+    top: 30%;
+}
+
+.share-icon {
+    width: 8%;
+    cursor: pointer;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0 2.5rem 0 2.5rem;
+    background-color: #fff;
+    margin: 4rem 2rem 0 2rem;
+    height: 320px;
+    box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.announcements-title {
+    position: relative;
+    top: -10%;
+    left: -20%;
+}
+
+.announcements-hr {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 0.5rem 0 0.5rem 0;
+    visibility: visible;
+}
+
+.trending {
+    grid-column: 2/3;
+    padding: 0 2.5rem 1rem 2.5rem;
+    margin: 4rem 2rem 2rem 2rem;
+    background-color: #fff;
+    box-shadow: 2px 5px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.trending-title {
+    position: relative;
+    top: -11%;
+    left: -20%;
+}
+
+.trending-avatar {
+    width: 30%;
+    float: left;
+}
+
+.trending-name {
+    padding-left: 3.8rem;
+}
+
+.trending-post {
+    padding-left: 3.8rem;
+    padding-bottom: 1rem;
+    font-size: 0.9em;
+    cursor: pointer;
 }

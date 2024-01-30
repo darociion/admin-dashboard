@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta trendName="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
@@ -32,15 +32,18 @@
             </div>
             <div class="user">
                 <div class="profile">
-                    <img class="avatar" src="./avatar/dog.png" alt="profile">
+                    <img class="avatar userAvatar" src="./avatar/dog.png" alt="profile">
                 </div>
-                <div class="name">
+                <div class="userName">
                     <h3>John Doe</h3>
                 </div>
             </div>
             <div class="greetings">
-                <h4>Hi there, </h4>
-                <h3>John Doe (@johndoe)</h3>
+                <img class="adminAvatar" src="./avatar/dog.png" alt="avatar">
+                <div class="admin">
+                    <h4>Hi there, </h4>
+                    <h3>Jon Doe (@jon)</h3>
+                </div>
             </div>
             <div class="buttons">
                 <button class="button">New</button>
@@ -49,63 +52,96 @@
             </div>
         </div>
         <div class="content">
-            <h1>Your projects</h1>
-            <p>Here you can see your projects</p>
+            <h1 class="content-title" >Your projects</h1>
             <div class="cards">
                 <div class="card">
-                    <h3>Project 1</h3>
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
                 </div>
                 <div class="card">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing                   </div>
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing                   </div>
-                <div class="card">
-                    <h3>Project 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing                   </div>
-                <div class="card">
-                    <h3>Project 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing                   </div>
-                <div class="card">
-                    <h3>Project 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing                   </div>
-                <div class="announcements">
-                    <h2>Announcements</h2>
-                    <div class="card">
-                        <h3>Site Maintenance</h3>
-                        <p>We will be back soon</p>
-                    </div>
-                    <div class="card">
-                        <h3>Community Share Day</h3>
-                        <p>Happy sharing with the community</p>
-                    </div>
-                    <div class="card">
-                        <h3>Updated Privacy Policy</h3>
-                        <p>Check out our new privacy policy</p>
-                    </div>
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
                 </div>
-                <div class="trending">
-                    <h2>Trending</h2>
-                    <div class="card">
-
-                           <div class="profile">
-                            <h3>@johndoe</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-
-                           <div class="profile">
-                            <h3>@johndoe</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-
-                           <div class="profile">
-                            <h3>@johndoe</h3>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
+                </div>
+                <div class="card">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
+                </div>
+                <div class="card">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
+                </div>
+                <div class="card">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <span class="share">
+                        <img class="share-icon" src="icons/like.svg" alt="like">
+                        <img class="share-icon" src="icons/share.svg" alt="share">
+                    </span>
+                </div>
             </div>
+            <div class="announcements">
+                <h1 class="announcements-title">Announcements</h1>
+                <div class="announcement">
+                    <h3>Site Maintenance</h3>
+                    <p>We will be back soon</p>
+                </div>
+                <hr class="announcements-hr">
+                <div class="announcement">
+                    <h3>Community Share Day</h3>
+                    <p>Happy sharing with the community</p>
+                </div>
+                <hr class="announcements-hr">
+                <div class="announcement">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Check out our new privacy policy</p>
+                </div>
+            </div>
+            <div class="trending">
+                <h1 class="trending-title">Trending</h1>
+                <span class="trending-profile profile1">
+                    <img class="avatar trending-avatar" src="./avatar/panda.png" alt="avatar">
+                    <h3 class="trending-name">@steve</h3>
+                    <p class="trending-post">World Peace Builder</p>
+                </span>
+                <span class="trending-profile profile2">
+                    <img class="avatar trending-avatar" src="./avatar/rabbit.png" alt="avatar">
+                    <h3 class="trending-name">@lourdes</h3>
+                    <p class="trending-post">Life Changing App</p>
+                </span>
+                <span class="trending-profile profile3">
+                    <img class="avatar trending-avatar" src="./avatar/dog.png" alt="avatar">
+                    <h3 class="trending-name">@jon</h3>
+                    <p class="trending-post">Super Cool Project</p>
+                </span>
+                <span class="trending-profile profile4">
+                    <img class="avatar trending-avatar" src="./avatar/penguin.png" alt="avatar">
+                    <h3 class="trending-name">@michael</h3>
+                    <p class="trending-post">No Traffic Maker</p>
+                </span>
         </div>
     </div>
 </body>
