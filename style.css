@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
 }
 
 h1 {
@@ -186,12 +187,13 @@ button {
 .content {
     display: grid;
     grid-template-columns: 1fr 0.4fr;
+    position: relative;
 }
 
 .content-title {
     position: absolute;
-    top: 36%;
-    left: 20%;
+    top: 4%;
+    left: 6%;
 }
 
 .cards {
@@ -244,6 +246,10 @@ button {
     border: 1px solid rgb(0, 0, 0, 0.2);
     margin: 0.5rem 0 0.5rem 0;
     visibility: visible;
+}
+
+.announcement {
+    cursor: pointer;
 }
 
 .trending {
